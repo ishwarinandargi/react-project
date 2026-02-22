@@ -1,8 +1,6 @@
+import Button from "./Button";
+
 let Subtraction = () => {
-  return (
-    <div>
-      <h1>Subtraction Component</h1>
-    </div>
-  );
+  return <Button label={"Subtraction"} />;
 };
 export default Subtraction;

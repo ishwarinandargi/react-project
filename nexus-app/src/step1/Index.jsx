@@ -24,10 +24,12 @@ let Calculator = () => {
             />
           </div>
           <h1>Calculator </h1>
-          <Addition />
-          <Subtraction />
-          <Multiplication />
-          <Division />
+          <div className="flex flex-col gap-2 m-2">
+            <Addition />
+            <Subtraction />
+            <Multiplication />
+            <Division />
+          </div>
         </div>
       </div>
     </>
