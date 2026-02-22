@@ -1,4 +1,4 @@
-function Division() {
+let Division=()=>{
   return <div>Division</div>;
 }
 
