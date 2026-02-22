@@ -1,8 +1,6 @@
+import Button from "./Button";
+
 let Addition = () => {
-  return (
-    <div>
-      <p>Addition Component</p>
-    </div>
-  );
+  return <Button>Addition</Button>;
 };
 export default Addition;

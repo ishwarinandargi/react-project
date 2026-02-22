@@ -23,13 +23,13 @@ let Calculator = () => {
               placeholder="num2"
             />
           </div>
+          <h1>Calculator </h1>
+          <Addition />
+          <Subtraction />
+          <Multiplication />
+          <Division />
         </div>
       </div>
-      <h1>Calculator </h1>
-      <Addition />
-      <Subtraction />
-      <Multiplication />
-      <Division />
     </>
   );
 };
