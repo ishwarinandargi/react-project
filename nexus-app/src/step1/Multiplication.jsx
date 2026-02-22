@@ -1,5 +1,5 @@
 let Multiplication = () => {
-  return <div>Multiplication</div>;
+  return <div>Multiplication Component</div>;
 };
 
 export default Multiplication;

@@ -1,7 +1,7 @@
 let Addition = () => {
   return (
     <div>
-      <p>This is Addition Component</p>
+      <p>Addition Component</p>
     </div>
   );
 };
