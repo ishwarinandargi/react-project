@@ -5,8 +5,8 @@ import Division from "./Division";
 import { useState } from "react";
 
 let Calculator = () => {
-  const [num1, setNum1] = useState();
-  const [num2, setNum2] = useState();
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
 
   return (
     <>
@@ -20,13 +20,13 @@ let Calculator = () => {
               type="number"
               className="border-1 border-blue-900 p-3 m-2 text-center w-1/2 rounded-md"
               placeholder="num1"
-              onChange={(e) => setNum1(e.target.value)}
+              onChange={(e) => setNum1(Number(e.target.value))}
             />
             <input
               type="number"
               className="border-1 border-blue-900 p-3 m-2 text-center w-1/2 rounded-md"
               placeholder="num2"
-              onChange={(e) => setNum2(e.target.value)}
+              onChange={(e) => setNum2(Number(e.target.value))}
             />
           </div>
           <div className="flex flex-col gap-2 m-2">
