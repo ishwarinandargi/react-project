@@ -1,5 +1,13 @@
-let Division = () => {
-  return <div>Division Component</div>;
+import Button from "./Button";
+
+let Division = ({ num1, num2 }) => {
+  function handleDivision() {
+    if (!num1 || !num2) alert("Enter values here!!");
+    console.log(Number(num1) / Number(num2));
+    alert("The output is", Number(num1) / Number(num2));
+  }
+
+  return <Button label={"Division"} fn={handleDivision} />;
 };
 
 export default Division;

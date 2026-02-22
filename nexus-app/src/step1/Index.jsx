@@ -2,8 +2,12 @@ import Addition from "./Addition";
 import Multiplication from "./Multiplication";
 import Subtraction from "./Subtraction";
 import Division from "./Division";
+import { useState } from "react";
 
 let Calculator = () => {
+  const [num1, setNum1] = useState();
+  const [num2, setNum2] = useState();
+
   return (
     <>
       <div className="flex justify-center">
@@ -13,22 +17,23 @@ let Calculator = () => {
           </h1>
           <div className="flex">
             <input
-              type="text"
+              type="number"
               className="border-1 border-blue-900 p-3 m-2 text-center w-1/2 rounded-md"
               placeholder="num1"
+              onChange={(e) => setNum1(e.target.value)}
             />
             <input
-              type="text"
+              type="number"
               className="border-1 border-blue-900 p-3 m-2 text-center w-1/2 rounded-md"
               placeholder="num2"
+              onChange={(e) => setNum2(e.target.value)}
             />
           </div>
-          <h1>Calculator </h1>
           <div className="flex flex-col gap-2 m-2">
-            <Addition />
-            <Subtraction />
-            <Multiplication />
-            <Division />
+            <Addition num1={num1} num2={num2} />
+            <Subtraction num1={num1} num2={num2} />
+            <Multiplication num1={num1} num2={num2} />
+            <Division num1={num1} num2={num2} />
           </div>
         </div>
       </div>
