@@ -5,8 +5,8 @@ import Division from "./Division";
 import { useState } from "react";
 
 let Calculator = () => {
-  const [num1, setNum1] = useState(0);
-  const [num2, setNum2] = useState(0);
+  const [num1, setNum1] = useState(null);
+  const [num2, setNum2] = useState(null);
 
   return (
     <>
